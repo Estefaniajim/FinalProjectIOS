@@ -11,6 +11,12 @@
 		2ACB533E285596750064D8A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACB533D285596750064D8A4 /* ContentView.swift */; };
 		2ACB5340285596770064D8A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ACB533F285596770064D8A4 /* Assets.xcassets */; };
 		2ACB5343285596770064D8A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ACB5342285596770064D8A4 /* Preview Assets.xcassets */; };
+		2ACB534A285596C30064D8A4 /* PaginaMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACB5349285596C30064D8A4 /* PaginaMenu.swift */; };
+		2ACB534C285598AA0064D8A4 /* CrearNuevoUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACB534B285598AA0064D8A4 /* CrearNuevoUsuario.swift */; };
+		2ACB535028559CAF0064D8A4 /* TipsYRecetas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACB534F28559CAF0064D8A4 /* TipsYRecetas.swift */; };
+		2ACB535228559CC70064D8A4 /* ListaDeSuper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACB535128559CC70064D8A4 /* ListaDeSuper.swift */; };
+		2ACB535428559CE10064D8A4 /* EnlaceAhumadores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACB535328559CE10064D8A4 /* EnlaceAhumadores.swift */; };
+		2ACB535628559CF20064D8A4 /* Temperatura.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACB535528559CF20064D8A4 /* Temperatura.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		2ACB533D285596750064D8A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2ACB533F285596770064D8A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2ACB5342285596770064D8A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2ACB5349285596C30064D8A4 /* PaginaMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginaMenu.swift; sourceTree = "<group>"; };
+		2ACB534B285598AA0064D8A4 /* CrearNuevoUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearNuevoUsuario.swift; sourceTree = "<group>"; };
+		2ACB534F28559CAF0064D8A4 /* TipsYRecetas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsYRecetas.swift; sourceTree = "<group>"; };
+		2ACB535128559CC70064D8A4 /* ListaDeSuper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaDeSuper.swift; sourceTree = "<group>"; };
+		2ACB535328559CE10064D8A4 /* EnlaceAhumadores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnlaceAhumadores.swift; sourceTree = "<group>"; };
+		2ACB535528559CF20064D8A4 /* Temperatura.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperatura.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,12 @@
 			children = (
 				2ACB533B285596750064D8A4 /* FinalProjectIOSApp.swift */,
 				2ACB533D285596750064D8A4 /* ContentView.swift */,
+				2ACB5349285596C30064D8A4 /* PaginaMenu.swift */,
+				2ACB534B285598AA0064D8A4 /* CrearNuevoUsuario.swift */,
+				2ACB534F28559CAF0064D8A4 /* TipsYRecetas.swift */,
+				2ACB535128559CC70064D8A4 /* ListaDeSuper.swift */,
+				2ACB535328559CE10064D8A4 /* EnlaceAhumadores.swift */,
+				2ACB535528559CF20064D8A4 /* Temperatura.swift */,
 				2ACB533F285596770064D8A4 /* Assets.xcassets */,
 				2ACB5341285596770064D8A4 /* Preview Content */,
 			);
@@ -137,8 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ACB534C285598AA0064D8A4 /* CrearNuevoUsuario.swift in Sources */,
 				2ACB533E285596750064D8A4 /* ContentView.swift in Sources */,
 				2ACB533C285596750064D8A4 /* FinalProjectIOSApp.swift in Sources */,
+				2ACB535428559CE10064D8A4 /* EnlaceAhumadores.swift in Sources */,
+				2ACB535028559CAF0064D8A4 /* TipsYRecetas.swift in Sources */,
+				2ACB535228559CC70064D8A4 /* ListaDeSuper.swift in Sources */,
+				2ACB535628559CF20064D8A4 /* Temperatura.swift in Sources */,
+				2ACB534A285596C30064D8A4 /* PaginaMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
