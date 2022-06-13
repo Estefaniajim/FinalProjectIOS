@@ -8,10 +8,67 @@
 import Foundation
 import SwiftUI
 
-struct TipsYRecetas: View {
+struct DetailView: View {
+    var recipe: Recipe
+    
     var body: some View {
-        Text("Tips y recetas")
+        VStack {
+            Text(recipe.name)
+            .font(.title)
+            .fontWeight(.black)
+            
+            VStack {
+                Text(recipe.complexity)
+                    .fontWeight(.heavy)
+                Text("\(recipe.duration)")
+                    .fontWeight(.heavy)
+            }
+            
+            Spacer()
+        }
     }
+}
+
+struct Reciperow: View {
+    var recipe: Recipe
+    
+    
+    var body: some View {
+        VStack{
+            Text(recipe.name)
+                .font(.title2)
+                .fontWeight(.black)
+                HStack {
+                    VStack(alignment: .leading) {
+                        Image("burger")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(maxWidth: .infinity, maxHeight: 60)
+                                .clipped()
+                        Text(recipe.duration)
+                            .font(.subheadline).foregroundColor(.gray)
+                        Text(String("Complexity: \(recipe.complexity)"))
+                                .font(.subheadline).foregroundColor(.gray)
+                    }
+                    Spacer()
+                    
+                }
+            }
+        }
+        
+}
+
+struct TipsYRecetas: View {
+    @ObservedObject var recipeData = ReadData()
+    
+    var body: some View {
+            List(recipeData.recipes){ recipe in
+                NavigationLink(destination: DetailView(recipe: recipe)){
+                    Reciperow(recipe: recipe)
+                }
+            }
+    }
+        
 }
 
 struct TipsYRecetas_Previews: PreviewProvider {

@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Cochinita",
+        "duration": "8:40 hours",
+        "complexity": "Hard"
+   },
+    {
+        "name": "Hamburguer",
+        "duration": "2:10 hours",
+        "complexity": "Medium"
+   },
+    {
+        "name": "Steak",
+        "duration": "0:45 hours",
+        "complexity": "Medium"
+   },
+    {
+        "name": "Pork",
+        "duration": "2:30 hours",
+        "complexity": "High"
+   },
+    {
+        "name": "Cochinita",
+        "duration": "8:40 hours",
+        "complexity": "Hard"
+   },
+    {
+        "name": "Hamburguer",
+        "duration": "2:10 hours",
+        "complexity": "Medium"
+   },
+    {
+        "name": "Steak",
+        "duration": "0:45 hours",
+        "complexity": "Medium"
+   },
+    {
+        "name": "Pork",
+        "duration": "2:30 hours",
+        "complexity": "High"
+   }
+]

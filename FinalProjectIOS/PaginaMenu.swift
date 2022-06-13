@@ -15,6 +15,7 @@ struct PaginaMenu: View {
                 NavigationLink(destination: TipsYRecetas()) {
                     Text("Tips y Recetas")
                 }
+                
                 NavigationLink(destination: ListaDeSuper()) {
                     Text("Lista del super")
                 }
@@ -27,6 +28,7 @@ struct PaginaMenu: View {
             }
             .navigationTitle("Página menú")
         }.navigationBarHidden(true)
+            
     }
     
 }

@@ -9,8 +9,38 @@ import Foundation
 import SwiftUI
 
 struct ListaDeSuper: View {
+                        
+    @State var name: String = ""
+    @State var quantity: String = ""
+    
     var body: some View {
-        Text("Lista de super")
+        ZStack(alignment: .top){
+            List{
+                Section(header: Text("Nuvo objeto")){
+                    HStack{
+                        VStack{
+                            TextField("Nombre", text: $name)
+                            TextField("Cantidad", text: $quantity)
+                                .keyboardType(.numberPad)
+                        }
+                        
+                        Button(action: {
+                            
+                        }, label: {
+                            Text("Save item")
+                        })
+                    }
+                }
+                
+                Section{
+                    Text("abc")
+                }
+            }
+            
+            .padding()
+        }
+        .navigationBarTitle("Lista de super", displayMode: .inline)
+        
     }
 }
 
