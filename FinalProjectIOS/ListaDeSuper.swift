@@ -5,43 +5,45 @@
 //  Created by Estefania Jimenez Garcia  on 11/06/22.
 //
 
-import Foundation
 import SwiftUI
+import Foundation
+
 
 struct ListaDeSuper: View {
-                        
-    @State var name: String = ""
-    @State var quantity: String = ""
+    
+    @ var listViewModel: ViewModelListaSuper
+    @State var items: [ListaSuperItem] = [
+        ListaSuperItem(title: "Carne", isCompleted: false),
+        ListaSuperItem(title: "Ajo", isCompleted: true),
+        ListaSuperItem(title: "Pimienta", isCompleted: false)
+    ]
     
     var body: some View {
         ZStack(alignment: .top){
             List{
-                Section(header: Text("Nuvo objeto")){
-                    HStack{
-                        VStack{
-                            TextField("Nombre", text: $name)
-                            TextField("Cantidad", text: $quantity)
-                                .keyboardType(.numberPad)
-                        }
-                        
-                        Button(action: {
-                            
-                        }, label: {
-                            Text("Save item")
-                        })
-                    }
+                ForEach(items) { item in
+                    ListaSuperRow(item: item)
                 }
-                
-                Section{
-                    Text("abc")
-                }
+                .onDelete(perform: deleteItem)
+                .onMove(perform: moveItem)
             }
-            
             .padding()
+            .navigationBarTitle("Lista de super", displayMode: .inline)
+            .navigationBarItems(leading: EditButton(), trailing: NavigationLink("Add", destination: ListaSuperAddView()))
+            .listStyle(PlainListStyle())
         }
-        .navigationBarTitle("Lista de super", displayMode: .inline)
+        
         
     }
+    
+    func deleteItem(indexSet: IndexSet){
+        items.remove(atOffsets: indexSet)
+    }
+    
+    func moveItem(from: IndexSet, to: Int){
+        items.move(fromOffsets: from, toOffset: to)
+    }
+    
 }
 
 struct ListaDeSuper_Previews: PreviewProvider {
