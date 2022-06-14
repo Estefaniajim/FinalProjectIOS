@@ -12,12 +12,14 @@ struct Recipe: Codable, Identifiable {
         case name
         case duration
         case complexity
+        case recipe
     }
     
     var id = UUID()
     var name: String
     var duration: String
     var complexity: String
+    var recipe: String
 }
 
 class ReadData: ObservableObject  {

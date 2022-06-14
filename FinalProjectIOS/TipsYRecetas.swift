@@ -13,6 +13,11 @@ struct DetailView: View {
     
     var body: some View {
         VStack {
+            Image("burger")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(maxWidth: .infinity, maxHeight: 150)
+                    .clipped()
             Text(recipe.name)
             .font(.title)
             .fontWeight(.black)
@@ -23,6 +28,8 @@ struct DetailView: View {
                 Text("\(recipe.duration)")
                     .fontWeight(.heavy)
             }
+            Text(recipe.recipe)
+                
             
             Spacer()
         }
@@ -43,7 +50,7 @@ struct Reciperow: View {
                         Image("burger")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
-                                .frame(maxWidth: .infinity, maxHeight: 60)
+                                .frame(maxWidth: .infinity, maxHeight: 150)
                                 .clipped()
                         Text(recipe.duration)
                             .font(.subheadline).foregroundColor(.gray)
