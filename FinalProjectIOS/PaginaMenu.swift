@@ -9,9 +9,7 @@ import Foundation
 import SwiftUI
 
 struct PaginaMenu: View {
-    
-    @StateObject var listViewModel: ViewModelListaSuper = ViewModelListaSuper()
-    
+
     var body: some View {
         NavigationView {
             List {
@@ -31,7 +29,6 @@ struct PaginaMenu: View {
             }
             .navigationTitle("Página menú")
         }.navigationBarHidden(true)
-            .environmentObject(listViewModel)
             
     }
     

@@ -11,11 +11,11 @@ import Firebase
 @main
 struct FinalProjectIOSApp: App {
     
-    
+    let persistentContainer = ListaSuperCoreDataManager.shared.persistentContainer
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environment(\.managedObjectContext, persistentContainer.viewContext)
         }
     }
 }
