@@ -10,7 +10,7 @@ import SwiftUI
 
 struct EnlaceAhumadores: View {
     var body: some View {
-        Text("Enlace a ahumadores")
+        Text("Tu ahumador")
     }
 }
 

@@ -17,8 +17,8 @@
 		2ACB535228559CC70064D8A4 /* ListaDeSuper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACB535128559CC70064D8A4 /* ListaDeSuper.swift */; };
 		2ACB535428559CE10064D8A4 /* EnlaceAhumadores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACB535328559CE10064D8A4 /* EnlaceAhumadores.swift */; };
 		2ACB535628559CF20064D8A4 /* Temperatura.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACB535528559CF20064D8A4 /* Temperatura.swift */; };
+		2ACB5359285AA3880064D8A4 /* ListaModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2ACB5357285AA3880064D8A4 /* ListaModel.xcdatamodeld */; };
 		9B0FEC1628593E8200F27206 /* ListaSuperCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0FEC1528593E8200F27206 /* ListaSuperCoreDataManager.swift */; };
-		9B0FEC1928594D0700F27206 /* ListaModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B0FEC1728594D0700F27206 /* ListaModel.xcdatamodeld */; };
 		9BE3BD522857C08100848173 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BE3BD512857C08100848173 /* GoogleService-Info.plist */; };
 		9BE3BD552857C19900848173 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9BE3BD542857C19900848173 /* FirebaseAnalytics */; };
 		9BE3BD572857C19900848173 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9BE3BD562857C19900848173 /* FirebaseFirestore */; };
@@ -39,8 +39,8 @@
 		2ACB535128559CC70064D8A4 /* ListaDeSuper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaDeSuper.swift; sourceTree = "<group>"; };
 		2ACB535328559CE10064D8A4 /* EnlaceAhumadores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnlaceAhumadores.swift; sourceTree = "<group>"; };
 		2ACB535528559CF20064D8A4 /* Temperatura.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperatura.swift; sourceTree = "<group>"; };
+		2ACB5358285AA3880064D8A4 /* ListaModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ListaModel.xcdatamodel; sourceTree = "<group>"; };
 		9B0FEC1528593E8200F27206 /* ListaSuperCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaSuperCoreDataManager.swift; sourceTree = "<group>"; };
-		9B0FEC1828594D0700F27206 /* ListaModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ListaModel.xcdatamodel; sourceTree = "<group>"; };
 		9BE3BD512857C08100848173 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9BE3BD582857C3A600848173 /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
 		9BE3BD5C2857C63800848173 /* Userdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Userdata.json; sourceTree = "<group>"; };
@@ -88,8 +88,8 @@
 				9BE3BD5C2857C63800848173 /* Userdata.json */,
 				2ACB534F28559CAF0064D8A4 /* TipsYRecetas.swift */,
 				2ACB535128559CC70064D8A4 /* ListaDeSuper.swift */,
+				2ACB5357285AA3880064D8A4 /* ListaModel.xcdatamodeld */,
 				9B0FEC1528593E8200F27206 /* ListaSuperCoreDataManager.swift */,
-				9B0FEC1728594D0700F27206 /* ListaModel.xcdatamodeld */,
 				2ACB535328559CE10064D8A4 /* EnlaceAhumadores.swift */,
 				2ACB535528559CF20064D8A4 /* Temperatura.swift */,
 				9BE3BD582857C3A600848173 /* Recipes.swift */,
@@ -187,7 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B0FEC1928594D0700F27206 /* ListaModel.xcdatamodeld in Sources */,
+				2ACB5359285AA3880064D8A4 /* ListaModel.xcdatamodeld in Sources */,
 				2ACB534C285598AA0064D8A4 /* CrearNuevoUsuario.swift in Sources */,
 				2ACB533E285596750064D8A4 /* ContentView.swift in Sources */,
 				2ACB533C285596750064D8A4 /* FinalProjectIOSApp.swift in Sources */,
@@ -424,12 +424,12 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		9B0FEC1728594D0700F27206 /* ListaModel.xcdatamodeld */ = {
+		2ACB5357285AA3880064D8A4 /* ListaModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				9B0FEC1828594D0700F27206 /* ListaModel.xcdatamodel */,
+				2ACB5358285AA3880064D8A4 /* ListaModel.xcdatamodel */,
 			);
-			currentVersion = 9B0FEC1828594D0700F27206 /* ListaModel.xcdatamodel */;
+			currentVersion = 2ACB5358285AA3880064D8A4 /* ListaModel.xcdatamodel */;
 			path = ListaModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
